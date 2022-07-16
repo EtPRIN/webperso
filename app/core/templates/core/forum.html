@@ -1,0 +1,22 @@
+{% extends 'core/basebaniere.html' %}
+
+{% load static %}
+
+{% block fichierCSS %}
+<link rel="stylesheet" href="{% static 'styleForum.css' %}"/>
+{% endblock fichierCSS %}
+
+{% block content %}
+<h1>Messagerie Instantanée</h1>
+<div id="blocMessagerie">
+    <div id="contacts">
+    </div>
+    <div id="zoneMessages">
+        <div id="destinataire"></div>
+        <div id="messages">
+        </div>
+        <textarea type="text" id="ecritureMessage" name="ecritureMessage"></textarea>
+    </div>
+</div>
+<script src="{% static 'script_forum.js' %}"></script>
+{% endblock content%}

@@ -1,0 +1,147 @@
+div
+{
+    color: black;
+    font-family: Roboto,Serif, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: .9rem;
+    line-height: 1.5;
+    /*border: 1px solid black;
+    margin: 2px;*/
+}
+h1
+{
+    font-size: 1.7rem;
+}
+
+h2
+{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+p
+{
+    width: 100%;
+    text-align: justify;
+}
+
+.text-blue{
+    color: #4472C4;
+}
+
+
+/*en tête*/
+#banniere
+{
+    height: 0px;
+    margin: 30px
+}
+
+#main-title
+{
+    padding-left: 30px;
+    color: white;
+}
+
+header
+{
+    position:sticky;
+    top: 0px; left: 0px; right: 0px;
+    color: white;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #4472c4;
+    min-height: 90px;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/* navigation */
+nav{
+    width: 100%;
+    margin : 0 auto;
+    top: 0px;
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+    padding: 0px;
+}
+nav ul li{
+    float: left;
+    width: 25%;
+    text-align: center;
+    position: relative;
+    padding-bottom: 15px;
+}
+nav ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+nav a
+{
+    display: block;
+    font-size: 1.2em;
+    color: white;
+    padding: 10px;
+    border-bottom: 2px solid transparent;
+    text-decoration: none;
+}
+nav a:hover{
+    color: #0a28af;
+    margin-bottom: 3px solid #0a28af;
+}
+.sous{
+    display: none;
+    background-color: #4472c4;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+}
+.sous li{
+    float: none;
+    width: 100%;
+    text-align: center;
+}
+.sous li a{
+    padding: 0px;
+    border-bottom: none;
+}
+nav > ul li:hover .sous{
+    display:block;
+}
+
+.deroulant > a::after{
+    content:" ▼";
+    font-size: 12px;
+}
+
+/*body*/
+#bloc_interior
+{
+    background-color: white;
+    width:min-content;
+    margin: auto;
+    padding: 30px;
+}
+
+body
+{
+    background-color: rgb(226, 224, 224);
+}
+
+/*footer*/
+footer
+{
+    position: absolute;
+    left: 0px;right: 0px;
+    /*width: 100%;*/
+    background-color: #4472c4;
+    color: white;
+    margin-top: 30px;
+}

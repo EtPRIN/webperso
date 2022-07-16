@@ -1,0 +1,21 @@
+{% extends 'core/basebaniere.html' %}
+{% load static %}
+
+{% block fichierCSS %}
+<link rel="stylesheet" href="{% static 'styleSnake.css' %}"/>
+{% endblock fichierCSS %}
+
+
+
+{% block content %}
+<h1>Snake</h1>
+<div id="explicationSnake">
+    <p>
+        Utilisez les flèches directionnels pour se déplacer, et la touche espace pour mettre en pause.<br>
+        Appuyer sur entrée pour relancer le jeu.<br> 
+    </p>
+</div>
+<div id="snake"></div>
+<script src="{% static 'script_snake.js' %}"></script>
+
+{% endblock %}

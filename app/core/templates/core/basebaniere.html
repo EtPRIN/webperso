@@ -1,0 +1,65 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <!-- <link rel="stylesheet" href="../css/style.css"/> -->
+        <link rel="stylesheet" href="{% static 'style.css' %}"/>
+        {%block fichierCSS%}{%endblock fichierCSS%}
+        <title>Etienne-Théodore PRIN site Web</title>
+    </head>
+
+    <body>
+        <div id="bloc_page">
+            <!-- En tête de la page-->
+            <header>
+                <div id="main-title">
+                    <h1>PRIN</h1>
+                </div>
+
+                <nav>
+                    <ul>
+                        <li><a href="/CV/">CV</a></li>
+                        <li class="deroulant"><a href="#">Projets de Développement Web</a>
+                            <ul class="sous">
+                                <li><a href="/snake/">Jeu Snake</a></li>
+                                <li><a href="/forum/">Messagerie instantanée</a></li>
+                                <li><a href="#">Reconnaissance Chiffre</a></li>
+                            </ul>
+                        </li>
+                        <li class="deroulant"><a href="#">Projets de Data Science</a>
+                            <ul class="sous">
+                                <li><a href="#">Intro</a></li>
+                            </ul>
+                        </li>
+                        <li class="deroulant"><a href="#">Projets de Deep Learning/IA</a>
+                            <ul class="sous">
+                                <li><a href="#">Reconnaissance Chiffre</a></li>
+                            </ul>
+                        </li>
+                        <li class="deroulant"><a href="TIetCV.html">Projets de Traitement d'image et Computer Vision</a>
+                            <ul class="sous">
+                                <li><a href="#">Intro</a></li>
+                                <li><a href="#">Reconnaissance Chiffre</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <div id="banniere">
+                <!--Si on desire une bannière ici non-->
+                <p></p>
+            </div>
+            <div id="bloc_interior">
+                <section>
+                    {%block content%}{% endblock %}
+                </section>
+            </div>
+            <!--
+            <footer>
+                <P>Footer (à remplir)</P>
+            </footer>
+            -->
+        </div>
+    </body>
+</html>

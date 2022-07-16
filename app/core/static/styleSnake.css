@@ -1,0 +1,40 @@
+#snake{
+    min-width: 500px;
+    width: 100%;
+    border: 1px solid;
+    border-color:  rgb(11, 139, 50);
+}
+#ligne{
+    width: max-content;
+    display: flex;
+}
+#vide{
+    height: max-content;
+    min-width: 25px;
+    min-height: 25px;
+    /*border: 1px solid;
+    border-color: black;*/
+    background-color: rgb(193, 253, 199);
+}
+#fruit{
+    min-width: 25px;
+    min-height: 25px;
+    /*border: 1px solid;
+    border-color: black;*/
+    background-color: red;
+}
+#snakeCorps{
+    min-width: 25px;
+    min-height: 25px;
+    /*border: 1px solid;
+    border-color: black;*/
+    background-color: rgb(11, 139, 50);
+}
+#explicationSnake{
+    display: flex;
+    margin-bottom: 10px;
+}
+#score{
+    background-color:  rgb(11, 139, 50);
+    color: beige;
+}

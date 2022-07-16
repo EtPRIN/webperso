@@ -1,0 +1,143 @@
+{% extends 'core/basebaniere.html' %}
+{% load static %}
+
+{% block fichierCSS %}
+<link rel="stylesheet" href="{% static 'styleCV.css' %}"/>
+{% endblock fichierCSS %}
+
+{% block content %}
+<aside>
+    <img class="portait" src="{% static 'photo_cv.png' %}" />
+    <h2>à propos</h2>
+    <p>Passionné par l'informatique, j'ai commencé à produire mes premiers programmes à 12 ans. J'aime le défi qu'apporte la data science, la créativité que demande le web developpement.<br>
+        Je souhaite par mes compétences aider tout le monde et c'est pourquoi je souhaite faire carière dans le bio médicale
+    </p>
+    <h2>compétences</h2>
+    <ul>
+        <li>Python/C</li>
+        <li>Science des données</li>
+        <li>Traitement d'image</li>
+        <li>Deep Learning</li>
+        <li>Tensorflow/Keras</li>
+        <li>Web Développement</li>
+        <li>Django (WEB Dev)</li>
+        <li>JS/Html/CSS</li>
+    </ul>
+    <h2>language</h2>
+    <p>Français, langue maternelle
+        <br>Anglais, courant
+        <br>Allemand, débutant
+    </p>
+    <h2>Centres d'intérêt</h2>
+    <p>Développement informatique<br>
+        Chant, en chorale ou en groupe<br>
+        bass éléctrique<br>
+        Sport collectif<br>
+        Photographie</p>
+</aside>
+<article>
+    <div id="en-tête">
+        <div id="name">
+            <h1>Etienne-Théodore <span class="text-blue">PRIN</span></h1>
+            <p>Etudiants en Ingénieurie Bio-médical/Data Science</p>
+        </div>
+        <div id="info">
+            <div id="contact">
+                <p>tel : 07 82 19 28 75<br>adress mail : etienne.prin@gmail.com</p>
+            </div>
+            <div id="adresse">
+                <p>20 BD Alexandre de Fraissinette <br>42100, Saint-Etienne </p>
+            </div>
+        </div>
+    </div>
+    <div id="corps_cv">
+        <h2>expériences<br><span class="text-blue">professionelles</span></h2>
+        <div id="experience">
+            <div id="date">
+                <p><b>août 2021</b></p>
+            </div>
+            <div id="info_date">
+                <p><b>Emploi vacataire</b><br>
+                    ASSOC Gestion Maison Elève Ecole Mines, Saint-Etienne<br>
+                Chargé du remplacement et réparation des meubles</p>
+            </div>
+        </div>
+        <div id="experience">
+            <div id="date">
+                <p><b>janvier 2021</b></p>
+            </div>
+            <div id="info_date">
+                <p><b>Stage Ouvrier</b><br>
+                    Tempere Entreprise, Presles, France<br>
+                Pose et enlèvement de couverture en ardoise</p>
+            </div>
+        </div>
+        <h2>études<br><span class="text-blue">& formations</span></h2>
+        <div id="formation">
+            <div id="date">
+                <p><b>2020 - 2023</b></p>
+            </div>
+            <div id="info_date">
+                <p><b>Ecole des Mines de Saint-Etienne</b><br>
+                    Cycle ingénieur civil des Mines ICM<br>
+                    Majeur Informatique, TB réseau/traitement d'image<br>
+                    Actuellement en Master 2
+                    </p>
+            </div>
+        </div>
+        <div id="formation">
+            <div id="date">
+                <p><b>2022 - 2023</b></p>
+            </div>
+            <div id="info_date">
+                <p><b>Ecole des Mines de Saint-Etienne</b><br>
+                    Master Ingénieurie Bio-Médical<br>
+                    Actuellement en Master 2
+                    </p>
+            </div>
+        </div>
+        <div id="formation">
+            <div id="date">
+                <p><b>2022 - 2023</b></p>
+            </div>
+            <div id="info_date">
+                <p><b>Open Classroom</b><br>
+                    Diplôme niveau 7 (bac +5) Data Science<br>
+                    (En cours)</p>
+            </div>
+        </div>
+        <h2>autres<br><span class="text-blue">expériences</span></h2>
+        <div id="experience">
+            <div id="date">
+                <p><b>2021 - 2022</b></p>
+            </div>
+            <div id="info_date">
+                <p><b>Trésorier</b><br>
+                    Bureau des Arts de L'Ecole des Mines de Saint-Etienne
+                    </p>
+            </div>
+        </div>
+        <div id="experience">
+            <div id="date">
+                <p><b>2021 - 2022</b></p>
+            </div>
+            <div id="info_date">
+                <p><b>Membre du pôle Communication</b><br>
+                    Bureau des Elèves de L'Ecole des Mines de Saint-Etienne
+                    </p>
+            </div>
+        </div>
+        <div id="experience">
+            <div id="date">
+                <p><b>2021 - 2022</b></p>
+            </div>
+            <div id="info_date">
+                <p><b>Membre MiTV</b><br>
+                    Ecole des Mines de Saint-Etienne<br>
+                    Association assurant la couverture photographiques des événements
+                    </p>
+            </div>
+        </div>
+    </div>
+</article>
+{% endblock content%}
